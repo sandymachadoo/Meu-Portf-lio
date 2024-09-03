@@ -1,0 +1,201 @@
+/* Importação de fontes externas do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Definição de variáveis de cores e fontes */
+:root {
+    --cor-primaria: #201E43; /* Cor de fundo principal */
+    --cor-secundaria: #EEEEEE; /* Cor de texto principal */
+    --cor-terciaria: #508C9B; /* Cor para elementos destacados */
+    --cor-hover: #26355D; /* Cor para o efeito hover */
+
+    --fonte-primaria: "Krona One", sans-serif; /* Fonte primária */
+    --fonte-secundaria: 'Montserrat', sans-serif; /* Fonte secundária */
+}
+
+/* Reseta margens e paddings padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o corpo da página */
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria); /* Cor de fundo */
+    color: var(--cor-secundaria); /* Cor do texto */
+}
+
+/* Estilo para o cabeçalho */
+.cabecalho {
+    padding: 2% 0% 0% 15%; /* Espaçamento interno */
+}
+
+/* Estilo para o menu de navegação do cabeçalho */
+.cabecalho__menu {
+    display: flex; /* Exibe os itens em linha */
+    gap: 80px; /* Espaço entre os itens */
+}
+
+/* Estilo para os links do menu de navegação */
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria); /* Fonte dos links */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: var(--cor-terciaria); /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição suave para cor e transformação */
+}
+
+/* Efeito hover para os links do menu */
+.cabecalho__menu__link:hover {
+    color: var(--cor-secundaria); /* Cor do texto quando o mouse passa sobre o link */
+    transform: scale(1.1); /* Aumenta o tamanho do link */
+    text-decoration: none; /* Remove sublinhado quando hover */
+}
+
+/* Estilo para a seção de contato principal */
+.main-contato {
+    padding: 5% 13%; /* Espaçamento interno */
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Margem automática centralizada */
+    background-color: var(--cor-primaria); /* Cor de fundo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar efeito de elevação */
+}
+
+/* Estilo para o título da seção de contato */
+.titulo-contato {
+    font-size: 30px; /* Tamanho da fonte */
+    font-family: var(--fonte-secundaria); /* Fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: var(--cor-secundaria); /* Cor do texto */
+}
+
+/* Estilo para o formulário de contato */
+.form-contato {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+}
+
+/* Estilo para os rótulos do formulário */
+.form-contato__label {
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    font-family: var(--fonte-primaria); /* Fonte dos rótulos */
+}
+
+/* Estilo para os campos de entrada e área de texto do formulário */
+.form-contato__input, .form-contato__textarea {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 4px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaço abaixo do campo */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo específico para campos de entrada */
+.form-contato__input {
+    border-color: var(--cor-terciaria); /* Cor da borda */
+    outline: none; /* Remove contorno padrão */
+    font-family: var(--fonte-primaria); /* Fonte dos campos de entrada */
+}
+
+/* Estilo específico para área de texto */
+.form-contato__textarea {
+    border-color: var(--cor-terciaria); /* Cor da borda */
+    outline: none; /* Remove contorno padrão */
+    font-family: var(--fonte-primaria); /* Fonte da área de texto */
+}
+
+/* Estilo para o botão de envio do formulário */
+.form-contato__button {
+    background-color: var(--cor-terciaria); /* Cor de fundo */
+    color: var(--cor-secundaria); /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Efeito hover para o botão de envio */
+.form-contato__button:hover {
+    background-color: var(--cor-hover); /* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+/* Estilo para a seção de apresentação */
+.apresentacao {
+    padding: 5% 13%; /* Espaçamento interno */
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    justify-content: space-between; /* Espaça os itens igualmente */
+}
+
+/* Estilo para o conteúdo da seção de apresentação */
+.apresentacao__conteudo {
+    width: 615px; /* Largura fixa */
+    display: flex; /* Exibe os itens em linha */
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 40px; /* Espaço entre os itens */
+}
+
+/* Estilo para o título da seção de apresentação */
+.apresentacao__conteudo__titulo {
+    font-size: 30px; /* Tamanho da fonte */
+    font-family: var(--fonte-primaria); /* Fonte do título */
+}
+
+/* Estilo para o título destacado */
+.titulo-destaque {
+    color: var(--cor-terciaria); /* Cor do texto destacado */
+}
+
+/* Estilo para o texto dentro da seção de apresentação */
+.apresentacao__conteudo__texto {
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: var(--fonte-secundaria); /* Fonte do texto */
+}
+
+/* Estilo para a seção de links na apresentação */
+.apresentacao__links {
+    display: flex; /* Exibe os itens em linha */
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens ao centro horizontalmente */
+    gap: 32px; /* Espaço entre os itens */
+}
+
+/* Estilo para o subtítulo dentro da seção de links */
+.apresentação__links__subtitulo {
+    font-family: var(--fonte-secundaria); /* Fonte do subtítulo */
+    font-weight: 400; /* Peso da fonte */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilo para os links dentro da seção de links */
+.apresentacao__links__link {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 16px; /* Espaço entre o ícone e o texto */
+    border: 2px groove var(--cor-terciaria); /* Borda do link */
+    width: 378px; /* Largura fixa */
+    text-align: center; /* Alinha o texto ao centro */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    padding: 21.5px 0; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    color: var(--cor-secundaria); /* Cor do texto */
+    font-family: var(--fonte-secundaria); /* Fonte do texto */
+}
+
+/* Efeito hover para os links dentro da seção de links */
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover); /* Cor de fundo quando o mouse passa sobre o link */
+}
+
+/* Estilo para as imagens */
+img {
+    border-radius: 50%; /* Faz a imagem circular */
+}
+
